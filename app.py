@@ -9,7 +9,7 @@ def save():
     f = open('data.json', 'r+', encoding='utf-8')
     json_file = json.load(f)
     ln = len(json_file)
-    now = datetime.datetime.now()
+    now = str(datetime.datetime.now())
     dt = {
     "id":ln,
     "name":"noname",
